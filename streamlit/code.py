@@ -37,7 +37,7 @@ import sys
 # st.write("Текущая рабочая директория:", os.getcwd())
 # st.write("Содержимое директории:", os.listdir('.'))
 
-st.write("Ссылка на GitHub c проектом, моделями и данными: https://github.com/cochievgeor-maker/HS-solution.git")
+# st.write("Ссылка на GitHub c проектом, моделями и данными: https://github.com/cochievgeor-maker/HS-solution.git")
 
 # Загрузка моделей с кэшированием. ВАЖНО! ОБРАЩАТЬСЯ К ФАЙЛАМ В ОДНОЙ ДИРЕКТОРИИ С ГЛАВНЫМ ФАЙЛОМ НУЖНО НАПРЯМУЮ
 @st.cache_resource
