@@ -36,13 +36,6 @@ import sys
 # Диагностика
 st.write("Текущая рабочая директория:", os.getcwd())
 st.write("Содержимое директории:", os.listdir('.'))
-st.write("Путь к скрипту:", __file__)
-
-# Проверяем существование файла
-if os.path.exists('/mount/src/hs-solution/streamlit/model_a2.pkl'):
-    st.success("Файл model_a2.pkl найден!")
-else:
-    st.error("Файл model_a2.pkl НЕ найден!")
     
 
 # Загрузка моделей с кэшированием. ВАЖНО! ОБРАЩАТЬСЯ К ФАЙЛАМ В ОДНОЙ ДИРЕКТОРИИ С ГЛАВНЫМ ФАЙЛОМ НУЖНО НАПРЯМУЮ
@@ -53,7 +46,7 @@ def load_models(ficha):
             model_a = joblib.load('/mount/src/hs-solution/streamlit/model_a2.pkl')
             return model_a
         if ficha == "b":
-            model_b = joblib.load('model_b2.pkl')
+            model_b = joblib.load('/mount/src/hs-solution/streamlit/model_b2.pkl')
             return model_b
     except Exception as e:
         st.error(f"Ошибка загрузки моделей: {e}")
@@ -64,10 +57,10 @@ def load_models(ficha):
 def load_scalers(ficha):
     try:
         if ficha == "a":
-            feature_a = joblib.load('features_a2.pkl')
+            feature_a = joblib.load('/mount/src/hs-solution/streamlit/features_a2.pkl')
             return feature_a
         if ficha == "b":
-            feature_b = joblib.load('features_b2.pkl')
+            feature_b = joblib.load('/mount/src/hs-solution/streamlit/features_b2.pkl')
             return feature_b
     except:
         return None, None
