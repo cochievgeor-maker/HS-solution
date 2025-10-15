@@ -7,4 +7,4 @@ matplotlib==3.7.1
 seaborn==0.12.2
 streamlit~=1.25.0
 rdkit~=2023.3.2
-distutils
+setuptools
