@@ -5,14 +5,14 @@ import joblib
 import io
 from sklearn.preprocessing import StandardScaler
 
-# from rdkit.Chem import PandasTools
+from rdkit.Chem import PandasTools
 import numpy as np
 import pandas as pd
-# from rdkit import DataStructs
+from rdkit import DataStructs
 from rdkit.Chem import AllChem as Chem
-# from rdkit.Chem import Draw
-# from rdkit.Chem import Descriptors
-# from rdkit.ML.Descriptors import MoleculeDescriptors
+from rdkit.Chem import Draw
+from rdkit.Chem import Descriptors
+from rdkit.ML.Descriptors import MoleculeDescriptors
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
