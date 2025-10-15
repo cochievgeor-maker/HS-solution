@@ -178,7 +178,7 @@ def preprocess_data(raw_df, ficha, n):
 def main():
 
     st.title("📊 ML Models with SMILES Upload")
-    st.write("Загрузите файл с данными для предсказания")
+    st.write("Загрузите файл с данными для предсказания. В качестве пробного файла можно использовать файл 'test_SMILE.csv', размещённый на GitHub проекта, в папке 'streamlit'")
 
     if 'processed_data' not in st.session_state:
         st.session_state.processed_data = None
