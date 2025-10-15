@@ -29,6 +29,22 @@ from sklearn import preprocessing
 # from genetic_selection import GeneticSelectionCV
 from mordred import Calculator, descriptors
 
+
+import os
+import sys
+
+# Диагностика
+st.write("Текущая рабочая директория:", os.getcwd())
+st.write("Содержимое директории:", os.listdir('.'))
+st.write("Путь к скрипту:", __file__)
+
+# Проверяем существование файла
+if os.path.exists('model_a2.pkl'):
+    st.success("Файл model_a2.pkl найден!")
+else:
+    st.error("Файл model_a2.pkl НЕ найден!")
+    
+
 # Загрузка моделей с кэшированием. ВАЖНО! ОБРАЩАТЬСЯ К ФАЙЛАМ В ОДНОЙ ДИРЕКТОРИИ С ГЛАВНЫМ ФАЙЛОМ НУЖНО НАПРЯМУЮ
 @st.cache_resource
 def load_models(ficha):
