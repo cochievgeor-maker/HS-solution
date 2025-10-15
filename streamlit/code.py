@@ -29,15 +29,15 @@ from sklearn import preprocessing
 # from genetic_selection import GeneticSelectionCV
 from mordred import Calculator, descriptors
 
-# Загрузка моделей с кэшированием
+# Загрузка моделей с кэшированием. ВАЖНО! ОБРАЩАТЬСЯ К ФАЙЛАМ В ОДНОЙ ДИРЕКТОРИИ С ГЛАВНЫМ ФАЙЛОМ НУЖНО НАПРЯМУЮ
 @st.cache_resource
 def load_models(ficha):
     try:
         if ficha == "a":
-            model_a = joblib.load('../streamlit/model_a2.pkl')
+            model_a = joblib.load('model_a2.pkl')
             return model_a
         if ficha == "b":
-            model_b = joblib.load('../streamlit/model_b2.pkl')
+            model_b = joblib.load('model_b2.pkl')
             return model_b
     except Exception as e:
         st.error(f"Ошибка загрузки моделей: {e}")
@@ -48,10 +48,10 @@ def load_models(ficha):
 def load_scalers(ficha):
     try:
         if ficha == "a":
-            feature_a = joblib.load('../streamlit/features_a2.pkl')
+            feature_a = joblib.load('features_a2.pkl')
             return feature_a
         if ficha == "b":
-            feature_b = joblib.load('../streamlit/features_b2.pkl')
+            feature_b = joblib.load('features_b2.pkl')
             return feature_b
     except:
         return None, None
