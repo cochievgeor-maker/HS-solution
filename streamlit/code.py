@@ -37,16 +37,16 @@ import sys
 # st.write("Текущая рабочая директория:", os.getcwd())
 # st.write("Содержимое директории:", os.listdir('.'))
 
-# st.write("Ссылка на GitHub c проектом, моделями и данными: https://github.com/cochievgeor-maker/HS-solution.git")
+st.write("Ссылка на GitHub c проектом, моделями и данными: https://github.com/cochievgeor-maker/HS-solution.git")
 
 # Загрузка моделей с кэшированием. ВАЖНО! ОБРАЩАТЬСЯ К ФАЙЛАМ В ОДНОЙ ДИРЕКТОРИИ С ГЛАВНЫМ ФАЙЛОМ НУЖНО НАПРЯМУЮ
 @st.cache_resource
 def load_models(ficha):
     try:
-        if ficha == "a":
+        if ficha == "A":
             model_a = joblib.load('/mount/src/hs-solution/streamlit/model_a2.pkl')
             return model_a
-        if ficha == "b":
+        if ficha == "B":
             model_b = joblib.load('/mount/src/hs-solution/streamlit/model_b2.pkl')
             return model_b
     except Exception as e:
@@ -57,10 +57,10 @@ def load_models(ficha):
 @st.cache_resource
 def load_scalers(ficha):
     try:
-        if ficha == "a":
+        if ficha == "A":
             feature_a = joblib.load('/mount/src/hs-solution/streamlit/features_a2.pkl')
             return feature_a
-        if ficha == "b":
+        if ficha == "B":
             feature_b = joblib.load('/mount/src/hs-solution/streamlit/features_b2.pkl')
             return feature_b
     except:
