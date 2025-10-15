@@ -1,0 +1,4 @@
+SMILES
+C(CC=C)CCCC.[SiH](CC)(CC)CC>>C(CC[Si](CC)(CC)CC)CCCCC
+C(CC=C)CCCC.[SiH](C)(C)c1ccccc1>>C(CC[Si](C)(C)c1ccccc1)CCCCC
+C(CC=C)CCCC.[SiH](c1ccccc1)(C)c1ccccc1>>C(CC[Si](c1ccccc1)(C)c1ccccc1)CCCCC
