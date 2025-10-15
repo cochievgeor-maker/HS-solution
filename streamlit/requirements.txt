@@ -8,3 +8,4 @@ seaborn==0.12.2
 streamlit~=1.25.0
 rdkit~=2023.3.2
 setuptools
+python_version==3.12
