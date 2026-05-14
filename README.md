@@ -2,7 +2,7 @@
 
 ## Software companion to the publication
 
-**HS-decision** is a companion repository for research on **hydrosilylation (HS)**. It bundles (i) tabular experimental and structural data, (ii) machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and (iii) a small **Streamlit** application for inference.
+**HS-decision** is a companion repository for research on **hydrosilylation (HS)**. It bundles tabular experimental and structural data, machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and a small **Streamlit** application for inference.
 
 When you cite the paper, please also reference this repository (ideally a **tagged release** or **archived snapshot**, e.g. Zenodo) and the **software version** used to obtain reported numbers.
 
