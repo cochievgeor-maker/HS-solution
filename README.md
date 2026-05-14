@@ -1,57 +1,65 @@
-# HS-decision
+# HS-solution
 
 ## Software companion to the publication
 
-**HS-decision** is a companion repository for research on **hydrosilylation (HS)**. It bundles tabular experimental and structural data, machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and a small **Streamlit** application for inference.
+**HS-solution** accompanies the hydrosilylation (**HS**) study. The repository groups three layers: (1) **tabular data** under [`All_data/`](All_data/), (2) **research code** under [`processing_and_ML_code/`](processing_and_ML_code/) (descriptor generation, genetic feature selection, model benchmarks, SHAP-style diagnostics), and (3) a lightweight **Streamlit** demo under [`streamlit/`](streamlit/) for loading new reaction SMILES and running the trained models. The article remains the authoritative description of chemistry, experiments, and statistics; this file is a **navigation map** for code and data.
 
-When you cite the paper, please also reference this repository (ideally a **tagged release** or **archived snapshot**, e.g. Zenodo) and the **software version** used to obtain reported numbers.
+When you cite the paper, also reference a **pinned commit or release** of this repository (and a Zenodo DOI if you archive one).
 
 ---
 
 ## Data in `All_data/`
 
-As of this revision, [`All_data/`](All_data/) contains only the items below.
+| Path | Description |
+|------|-------------|
+| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **Canonical ML reaction table.** Each row is one hydrosilylation entry used for model development: ChemDraw-style labels (`input`, `output`), targets **`a`** and **`b`**, and the full **reaction SMILES** in **`SMILES`**. **Only reactions listed here were used to train the ML models** reported in the paper. |
+| [`All_data/allData.csv`](All_data/allData.csv) | **Full valid descriptor matrix derived from SMILES.** Built from the same reaction inventory: leading columns include the condensed reaction key **`inp+inp=out`**, targets **`a`**, **`b`**, followed by **all numerically valid Mordred descriptors** computed for each reactant/product block (`reagent1_*`, `reagent2_*`, `product1_*`, …) after 3D embedding. This is the wide feature table before aggressive feature selection (thousands of columns, one row per reaction). |
+| [`All_data/substrats_ML/`](All_data/substrats_ML/) | **ChemDraw source pages** (`page1.cdx`–`page14.cdx`) containing the drawn schemes that the SMILES table was derived from. |
 
-| Path | Role |
-|------|------|
-| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **Canonical reaction table for machine learning.** Each row is one hydrosilylation entry: ChemDraw-style labels (`input`, `output`), response columns **`a`** and **`b`**, and the full **reaction SMILES** in **`SMILES`** (`reactants>>products`, dot-separated species). **Only the reactions listed in this file define the training inventory** for the ML models described in the paper (scope of structures and labels the algorithms were fit to). |
-| [`All_data/substrats_ML/`](All_data/substrats_ML/) | **ChemDraw documents** (`page1.cdx` … `page14.cdx`) containing the drawn reaction schemes that correspond to the dataset; they are the graphical source material aligned with the SMILES / label table above. |
+---
+
+## `processing_and_ML_code/` — modelling & processing
+
+These Jupyter notebooks contain the **end-to-end workflow** used for descriptor calculation, genetic feature selection, model comparison, and Streamlit-related experiments. **Cell outputs were cleared** for a clean Git export. User-facing strings, plot labels, and many comments were **translated to English**; a small number of legacy Russian fragments may still appear in long diagnostic cells—feel free to open a PR if you spot any.
+
+| Notebook | Purpose |
+|----------|---------|
+| [`allDataWrite.ipynb`](processing_and_ML_code/allDataWrite.ipynb) | Compute Mordred descriptors from reaction SMILES, assemble wide tables, PCA / parity-style diagnostics. |
+| [`gereticALGO.ipynb`](processing_and_ML_code/gereticALGO.ipynb) | Genetic algorithm feature selection (`GAFeatureSelectionCV`), Extra Trees benchmarks, small-sample model comparison. |
+| [`last1.ipynb`](processing_and_ML_code/last1.ipynb) | Data joins, exploratory analysis, and glue code between spreadsheet exports and modelling matrices. |
+| [`ProdactionML_SHAP.ipynb`](processing_and_ML_code/ProdactionML_SHAP.ipynb) | “Production” ML evaluation, residual checks, SHAP-oriented analysis. |
+| [`Jupyter_streamlit.ipynb`](processing_and_ML_code/Jupyter_streamlit.ipynb) | Streamlit UI prototype / parity checks with the deployed app logic. |
 
 ---
 
 ## Repository map (`streamlit/` and helpers)
 
-Below: what each entry is for and when you typically open it.
+The **`streamlit/`** tree ships the runnable web UI and a **small dependency list**. Older copies of some notebooks also live here for historical Streamlit Cloud layouts; the **canonical research notebooks** for publication are the versions in **`processing_and_ML_code/`**.
 
 | Path | What it is |
 |------|------------|
-| [`streamlit/code.py`](streamlit/code.py) | **Streamlit UI** — upload CSV/Excel with a `SMILES` column, pick initiator regime **A** (DTBP, 130 °C) or **B** (DCP, 120 °C), compute descriptors, run inference, download predictions as CSV. |
-| [`streamlit/requirements.txt`](streamlit/requirements.txt) | Minimal **pip** dependencies for the Streamlit app (Streamlit, pandas, scikit-learn, joblib, mordred, matplotlib, seaborn, RDKit). |
-| [`streamlit/test_SMILE.csv`](streamlit/test_SMILE.csv) | **Smoke-test input** — a few reaction SMILES in one column; useful to verify the UI and parsing. |
-| [`streamlit/allDataWrite.ipynb`](streamlit/allDataWrite.ipynb) | **Research notebook** — builds Mordred features from reaction SMILES in the same spirit as the app (good starting point if you extend the pipeline). |
-| [`streamlit/last1.ipynb`](streamlit/last1.ipynb) | **Exploratory notebook** — loads CSVs from `../data/` (expects a sibling `data` folder in a fuller checkout); many cells are stubs or commented—use as a scratchpad. |
-| [`streamlit/ProdactionML_SHAP.ipynb`](streamlit/ProdactionML_SHAP.ipynb) | **Evaluation / interpretability** — model metrics, plots, SHAP-oriented analysis (title reflects intent; adjust paths to your data). |
-| [`requirements.txt`](requirements.txt) | **Root-level** dependency list (overlap with `streamlit/requirements.txt`; handy for one-shot installs or CI). |
-| [`runtime.txt`](runtime.txt) | **Python version pin** for hosted deploys (currently **3.11**). Match this locally if you need identical behaviour. |
-| [`packages.txt`](packages.txt) | Optional **extra pinning** — fill or generate from `pip freeze` when you cut a reproducible release. |
+| [`streamlit/code.py`](streamlit/code.py) | **Streamlit UI** — upload CSV/Excel with a `SMILES` column, pick regime **A** (DTBP, 130 °C) or **B** (DCP, 120 °C), compute descriptors, run inference, download CSV. |
+| [`streamlit/requirements.txt`](streamlit/requirements.txt) | Minimal **pip** dependencies for the app. |
+| [`streamlit/test_SMILE.csv`](streamlit/test_SMILE.csv) | Tiny example file with a `SMILES` column. |
+| [`streamlit/allDataWrite.ipynb`](streamlit/allDataWrite.ipynb) | Legacy / duplicate notebook (see `processing_and_ML_code/` for the maintained copy). |
+| [`streamlit/last1.ipynb`](streamlit/last1.ipynb) | Legacy / duplicate notebook. |
+| [`streamlit/ProdactionML_SHAP.ipynb`](streamlit/ProdactionML_SHAP.ipynb) | Legacy / duplicate notebook. |
+| [`requirements.txt`](requirements.txt) | Root-level dependency list. |
+| [`runtime.txt`](runtime.txt) | Target **Python 3.11** for deployment. |
+| [`packages.txt`](packages.txt) | Optional extra pinning. |
 
 ---
 
 ## Quick run (local)
 
-1. Install deps: `pip install -r streamlit/requirements.txt`
-2. Add trained artefacts next to `code.py` (e.g. `model_a2.pkl`, `model_b2.pkl`, `features_a2.pkl`, `features_b2.pkl`) **or** edit the load paths in `code.py` (defaults may target Streamlit Cloud: `/mount/src/hs-solution/streamlit/…`).
-3. Start the app:
-
-   ```bash
-   cd streamlit
-   streamlit run code.py
-   ```
+1. `pip install -r streamlit/requirements.txt`
+2. Place `model_a2.pkl`, `model_b2.pkl`, `features_a2.pkl`, `features_b2.pkl` next to `streamlit/code.py`, **or** edit the loader paths (defaults may point to Streamlit Cloud: `/mount/src/hs-solution/streamlit/…`).
+3. `cd streamlit && streamlit run code.py`
 
 ---
 
 ## Upstream repository
 
-Canonical remote: **[github.com/cochievgeor-maker/HS-solution](https://github.com/cochievgeor-maker/HS-solution)**
+**[github.com/cochievgeor-maker/HS-solution](https://github.com/cochievgeor-maker/HS-solution)**
 
-After acceptance, consider updating this README with the **article DOI**, **journal reference**, and the **exact Git tag** archived with the paper.
+After acceptance, add the **article DOI**, **journal citation**, and the **Git tag** archived with the paper.
