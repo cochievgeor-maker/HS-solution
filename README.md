@@ -40,9 +40,6 @@ The **`streamlit/`** tree ships the runnable web UI and a **small dependency lis
 | [`streamlit/code.py`](streamlit/code.py) | **Streamlit UI** — upload CSV/Excel with a `SMILES` column, pick regime **A** (DTBP, 130 °C) or **B** (DCP, 120 °C), compute descriptors, run inference, download CSV. |
 | [`streamlit/requirements.txt`](streamlit/requirements.txt) | Minimal **pip** dependencies for the app. |
 | [`streamlit/test_SMILE.csv`](streamlit/test_SMILE.csv) | Tiny example file with a `SMILES` column. |
-| [`streamlit/allDataWrite.ipynb`](streamlit/allDataWrite.ipynb) | Legacy / duplicate notebook (see `processing_and_ML_code/` for the maintained copy). |
-| [`streamlit/last1.ipynb`](streamlit/last1.ipynb) | Legacy / duplicate notebook. |
-| [`streamlit/ProdactionML_SHAP.ipynb`](streamlit/ProdactionML_SHAP.ipynb) | Legacy / duplicate notebook. |
 | [`requirements.txt`](requirements.txt) | Root-level dependency list. |
 | [`runtime.txt`](runtime.txt) | Target **Python 3.11** for deployment. |
 | [`packages.txt`](packages.txt) | Optional extra pinning. |
