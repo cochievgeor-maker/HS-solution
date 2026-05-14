@@ -12,8 +12,8 @@ When you cite the paper, also reference a **pinned commit or release** of this r
 
 | Path | Description |
 |------|-------------|
-| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **Canonical ML reaction table.** Each row is one hydrosilylation entry used for model development: ChemDraw-style labels (`input`, `output`), targets **`a`** and **`b`**, and the full **reaction SMILES** in **`SMILES`**. **Only reactions listed here were used to train the ML models** reported in the paper. |
-| [`All_data/allData.csv`](All_data/allData.csv) | **Full valid descriptor matrix derived from SMILES.** Built from the same reaction inventory: leading columns include the condensed reaction key **`inp+inp=out`**, targets **`a`**, **`b`**, followed by **all numerically valid Mordred descriptors** computed for each reactant/product block (`reagent1_*`, `reagent2_*`, `product1_*`, …) after 3D embedding. This is the wide feature table before aggressive feature selection (thousands of columns, one row per reaction). |
+| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **A data table used for machine learning.** Not all the reactions described in the article were included in the learning algorithm - only a series from this list. |
+| [`All_data/allData.csv`](All_data/allData.csv) | **Full valid descriptor matrix derived from SMILES.** Built from the same reaction inventory: leading columns include the condensed reaction key **`inp+inp=out`**, targets **`a`**, **`b`**, followed by **all numerically valid Mordred descriptors** computed for each reactant/product block (`reagent1_*`, `reagent2_*`, `product1_*`, …). This is the wide feature table before aggressive feature selection (thousands of columns, one row per reaction). |
 | [`All_data/substrats_ML/`](All_data/substrats_ML/) | **ChemDraw source pages** (`page1.cdx`–`page14.cdx`) containing the drawn schemes that the SMILES table was derived from. |
 
 ---
