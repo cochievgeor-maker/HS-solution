@@ -12,7 +12,7 @@ When you cite the paper, also reference a **pinned commit or release** of this r
 
 | Path | Description |
 |------|-------------|
-| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **A data table used for machine learning.** Not all the reactions described in the article were included in the learning algorithm - only a series from this list. |
+| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **A data table used for machine learning.** A data table used for machine learning. Please note that not all the reactions described in the article are included in the learning algorithm - only the series from this list. |
 | [`All_data/allData.csv`](All_data/allData.csv) | **Full valid descriptor matrix derived from SMILES.** Built from the same reaction inventory: leading columns include the condensed reaction key **`inp+inp=out`**, targets **`a`**, **`b`**, followed by **all numerically valid Mordred descriptors** computed for each reactant/product block (`reagent1_*`, `reagent2_*`, `product1_*`, …). This is the wide feature table before aggressive feature selection (thousands of columns, one row per reaction). |
 | [`All_data/substrats_ML/`](All_data/substrats_ML/) | **ChemDraw source pages** (`page1.cdx`–`page14.cdx`) containing the drawn schemes that the SMILES table was derived from. |
 
@@ -28,13 +28,12 @@ These Jupyter notebooks contain the **end-to-end workflow** used for descriptor 
 | [`gereticALGO.ipynb`](processing_and_ML_code/gereticALGO.ipynb) | Genetic algorithm feature selection (`GAFeatureSelectionCV`), Extra Trees benchmarks, small-sample model comparison. |
 | [`last1.ipynb`](processing_and_ML_code/last1.ipynb) | Data joins, exploratory analysis, and glue code between spreadsheet exports and modelling matrices. |
 | [`ProdactionML_SHAP.ipynb`](processing_and_ML_code/ProdactionML_SHAP.ipynb) | “Production” ML evaluation, residual checks, SHAP-oriented analysis. |
-| [`Jupyter_streamlit.ipynb`](processing_and_ML_code/Jupyter_streamlit.ipynb) | Streamlit UI prototype / parity checks with the deployed app logic. |
 
 ---
 
 ## Repository map (`streamlit/` and helpers)
 
-The **`streamlit/`** tree ships the runnable web UI and a **small dependency list**. Older copies of some notebooks also live here for historical Streamlit Cloud layouts; the **canonical research notebooks** for publication are the versions in **`processing_and_ML_code/`**.
+The **`streamlit/`** tree ships the runnable web UI and a **small dependency list**. Older copies of some notebooks also live here for historical Streamlit Cloud layouts
 
 | Path | What it is |
 |------|------------|
@@ -62,4 +61,3 @@ The **`streamlit/`** tree ships the runnable web UI and a **small dependency lis
 
 **[github.com/cochievgeor-maker/HS-solution](https://github.com/cochievgeor-maker/HS-solution)**
 
-After acceptance, add the **article DOI**, **journal citation**, and the **Git tag** archived with the paper.
