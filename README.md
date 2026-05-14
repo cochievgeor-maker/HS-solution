@@ -1,8 +1,8 @@
-# HS-solution
+# HS-decision
 
 ## Software companion to the publication
 
-**HS-solution** is a companion repository for research on **hydrosilylation (HS)**. It bundles (i) tabular experimental and structural data, (ii) machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and (iii) a small **Streamlit** application for inference. The scientific rationale, experimental design, model validation, and chemical interpretation belong in the **peer-reviewed article**; this README records what is in the repository so readers can **find materials**, **cite a pinned release or DOI**, and **reproduce the software side** of the work.
+**HS-decision** is a companion repository for research on **hydrosilylation (HS)**. It bundles (i) tabular experimental and structural data, (ii) machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and (iii) a small **Streamlit** application for inference. The scientific rationale, experimental design, model validation, and chemical interpretation belong in the **peer-reviewed article**; this README records what is in the repository so readers can **find materials**, **cite a pinned release or DOI**, and **reproduce the software side** of the work.
 
 When you cite the paper, please also reference this repository (ideally a **tagged release** or **archived snapshot**, e.g. Zenodo) and the **software version** used to obtain reported numbers.
 
