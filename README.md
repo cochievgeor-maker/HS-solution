@@ -20,7 +20,7 @@ When you cite the paper, also reference a **pinned commit or release** of this r
 
 ## `processing_and_ML_code/` — modelling & processing
 
-These Jupyter notebooks contain the **end-to-end workflow** used for descriptor calculation, genetic feature selection, model comparison, and Streamlit-related experiments. **Cell outputs were cleared** for a clean Git export. User-facing strings, plot labels, and many comments were **translated to English**; a small number of legacy Russian fragments may still appear in long diagnostic cells—feel free to open a PR if you spot any.
+These Jupyter notebooks contain the **end-to-end workflow** used for descriptor calculation, genetic feature selection, model comparison, and Streamlit-related experiments.
 
 | Notebook | Purpose |
 |----------|---------|
