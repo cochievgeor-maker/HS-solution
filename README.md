@@ -1,12 +1,25 @@
 # HS-solution
 
-Machine-learning helpers for **hydrosilylation (HS)** workflows: predict from **reaction SMILES** (`reactants>>products`, dot-separated species) using pretrained models and Mordred/RDKit descriptors.
+## Software companion to the publication
 
-This README is a **navigation map** for the repository. For methodology, metrics, and chemistry, refer to your paper and notebooks.
+**HS-solution** is a companion repository for research on **hydrosilylation (HS)**. It bundles (i) tabular experimental and structural data, (ii) machine-learning models and descriptor pipelines based on **reaction SMILES** and **Mordred** / **RDKit**, and (iii) a small **Streamlit** application for inference. The scientific rationale, experimental design, model validation, and chemical interpretation belong in the **peer-reviewed article**; this README records what is in the repository so readers can **find materials**, **cite a pinned release or DOI**, and **reproduce the software side** of the work.
+
+When you cite the paper, please also reference this repository (ideally a **tagged release** or **archived snapshot**, e.g. Zenodo) and the **software version** used to obtain reported numbers.
 
 ---
 
-## Repository map
+## Data in `All_data/`
+
+As of this revision, [`All_data/`](All_data/) contains only the items below.
+
+| Path | Role |
+|------|------|
+| [`All_data/Names+SMILES_forML.csv`](All_data/Names+SMILES_forML.csv) | **Canonical reaction table for machine learning.** Each row is one hydrosilylation entry: ChemDraw-style labels (`input`, `output`), response columns **`a`** and **`b`**, and the full **reaction SMILES** in **`SMILES`** (`reactants>>products`, dot-separated species). **Only the reactions listed in this file define the training inventory** for the ML models described in the paper (scope of structures and labels the algorithms were fit to). |
+| [`All_data/substrats_ML/`](All_data/substrats_ML/) | **ChemDraw documents** (`page1.cdx` … `page14.cdx`) containing the drawn reaction schemes that correspond to the dataset; they are the graphical source material aligned with the SMILES / label table above. |
+
+---
+
+## Repository map (`streamlit/` and helpers)
 
 Below: what each entry is for and when you typically open it.
 
@@ -40,3 +53,5 @@ Below: what each entry is for and when you typically open it.
 ## Upstream repository
 
 Canonical remote: **[github.com/cochievgeor-maker/HS-solution](https://github.com/cochievgeor-maker/HS-solution)**
+
+After acceptance, consider updating this README with the **article DOI**, **journal reference**, and the **exact Git tag** archived with the paper.
