@@ -62,12 +62,20 @@ The **`streamlit/`** tree ships the runnable web UI and a **small dependency lis
 
 ---
 
+## Quick run (online)
+The interactive Streamlit application for hydrosilylation prediction is available here:  
+[Open HS-solution Streamlit App](https://hs-solution-d8jbbxadsjj8ex7qwy8s25.streamlit.app/)
+
+The app allows users to upload CSV or Excel files containing a `SMILES` column, choose the reaction regime, and obtain model predictions. 
+
+---
+
 ## Quick run (local)
 
 1. `pip install -r streamlit/requirements.txt`
 2. Place `model_a2.pkl`, `model_b2.pkl`, `features_a2.pkl`, `features_b2.pkl` next to `streamlit/code.py`, **or** edit the loader paths (defaults may point to Streamlit Cloud: `/mount/src/hs-solution/streamlit/…`).
 3. `cd streamlit && streamlit run code.py`
-
+4. 
 ---
 
 ## Upstream repository
