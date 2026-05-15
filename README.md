@@ -1,8 +1,8 @@
 # HS-solution
 
-## Software companion to the publication
+## Software companion to the publication: 
 
-**Peroxides Instead of Metals as Hydrosilylation Catalysts**
+## "Peroxides Instead of Metals as Hydrosilylation Catalysts"
 
 Anton P. Drozdov<sup>a,b</sup>, Irina K. Goncharova<sup>a,b</sup>, Maria S. Sokolova<sup>b,c</sup>, Maxim A. Novikov<sup>d</sup>, Irina P. Beletskaya<sup>a,c</sup>, Ashot V. Arzumanyan<sup>a,b*</sup>
 
