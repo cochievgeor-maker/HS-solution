@@ -81,7 +81,7 @@ Anton P. Drozdov (a), Irina K. Goncharova (a,b), Maria S. Sokolova (a), Georgy D
 
 ## Funding and acknowledgments
 ---------------------------
-This work was supported by the Russian Science Foundation (RSF), grant No. 25‑73‑10034. The synthesis of products 3(q–z)E was supported by the Ministry of Science and Higher Education of the Russian Federation (Contract No. 075‑03‑2026‑024, FFSF‑2025‑0014). The synthesis of products 3b(a–l) was carried out as part of the State Program of the A. V. Topchiev Institute of Petrochemical Synthesis (TIPS), Russian Academy of Sciences (RAS).
+This work was supported by the Russian Science Foundation (RSF), grant No. 25‑73‑10034. The synthesis of products 3(q–z)e was supported by the Ministry of Science and Higher Education of the Russian Federation (Contract No. 075‑03‑2026‑024, FFSF‑2025‑0014). The synthesis of products 3b(a–l) was carried out as part of the State Program of the A. V. Topchiev Institute of Petrochemical Synthesis (TIPS), Russian Academy of Sciences (RAS).
 
 Bogdan O. Protsenko acknowledges financial support from the Strategic Academic Leadership Program of the Southern Federal University (“Priority 2030”), within the framework of which the ML studies were conducted.
 
