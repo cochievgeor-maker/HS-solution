@@ -8,7 +8,7 @@
 6,1a+2h,3ah,11,11,C(CC=C)CCCC.[SiH](O[Si](C)(C)C)(O[Si](C)(C)C)C>>C(CC[Si](O[Si](C)(C)C)(O[Si](C)(C)C)C)CCCCC
 7,1a+2i,3ai,9,7,C(CC=C)CCCC.[SiH](O[Si](O[Si](C)(C)C)(O[Si](C)(C)C)C)(O[Si](O[Si](C)(C)C)(O[Si](C)(C)C)C)C>>[Si](O[Si](O[Si](C)(C)C)(O[Si](C)(C)C)C)(O[Si](O[Si](C)(C)C)(O[Si](C)(C)C)C)(CCCCCCCC)C
 8,1a+2j,3aj,5,3,C(CC=C)CCCC.[SiH](O[Si](C)(C)C)(O[Si](C)(C)C)O[Si](C)(C)C>>C(CC[Si](O[Si](C)(C)C)(O[Si](C)(C)C)O[Si](C)(C)C)CCCCC
-9,1a+2k,3ak,9,9,C(CC=C)CCCC.[SiH](OC(C)(C)C)(OC(C)(C)C)C>>C(CC[Si](O[Si](C)(C)C)(O[Si](C)(C)C)O[Si](C)(C)C)CCCCC
+9,1a+2k,3ak,9,9,C(CC=C)CCCC.[SiH](OC(C)(C)C)(OC(C)(C)C)C>>C(CC[Si](OC(C)(C)C)(OC(C)(C)C)C)CCCCC
 10,1c+2c,3cc,9,18,c1(CC=C)ccccc1.[SiH](c1ccccc1)(c1ccccc1)C>>C(CC[Si](c1ccccc1)(c1ccccc1)C)c1ccccc1
 11,1c+2d,3cd,10,21,c1(CC=C)ccccc1.[SiH](c1ccccc1)(c1ccccc1)c1ccccc1>>C(CC[Si](c1ccccc1)(c1ccccc1)c1ccccc1)c1ccccc1
 12,1c+2e,3ce,95,94,c1(CC=C)ccccc1.[SiH]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C>>C(CC[Si]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C)c1ccccc1
@@ -67,4 +67,4 @@
 67,1u+2d,3ud,43,36,C(C=C)N([Si](C)(C)C)[Si](C)(C)C.[SiH](c1ccccc1)(c1ccccc1)c1ccccc1>>C(CC[Si](c1ccccc1)(c1ccccc1)c1ccccc1)N([Si](C)(C)C)[Si](C)(C)C
 68,1u+2e,3ue,72,0,C(C=C)N([Si](C)(C)C)[Si](C)(C)C.[SiH]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C>>C(C[Si]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C)CN([Si](C)(C)C)[Si](C)(C)C
 69,1v+2e,3ve,93,90,C(C=C)NC(=O)OC(C)(C)C.[SiH]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C>>C(C[Si]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C)CNC(=O)OC(C)(C)C
-70,1w+2e,3we,70,0,C(C=C)N.[SiH]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C>>C(C[Si]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C)CN
+70,1w+2e,3we,70,67,C(C=C)N.[SiH]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C>>C(C[Si]([Si](C)(C)C)([Si](C)(C)C)[Si](C)(C)C)CN
