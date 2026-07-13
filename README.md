@@ -35,7 +35,7 @@ These Jupyter notebooks contain the **end-to-end workflow** used for descriptor 
 
 ## Repository map (`streamlit/` and helpers)
 
-The **`streamlit/`** tree ships the runnable web UI and a **small dependency list**. Older copies of some notebooks also live here for historical Streamlit Cloud layouts
+The **`streamlit/`** tree ships the runnable web UI and a **small dependency list**.
 
 | Path | What it is |
 |------|------------|
