@@ -4,18 +4,6 @@
 
 ## "Peroxides Instead of Metals as Hydrosilylation Catalysts"
 
-Anton P. Drozdov<sup>a,b</sup>, Irina K. Goncharova<sup>a,b</sup>, Maria S. Sokolova<sup>b,c</sup>, Maxim A. Novikov<sup>d</sup>, Irina P. Beletskaya<sup>a,c</sup>, Ashot V. Arzumanyan<sup>a,b*</sup>
-
-<sup>a</sup> A.V. Topchiev Institute of Petrochemical Synthesis, Russian Academy of Sciences, 29 Leninsky Prospect, Moscow 119991, Russian Federation  
-<sup>b</sup> A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences, 28 Vavilov St., Moscow 119991, Russian Federation  
-<sup>c</sup> M.V. Lomonosov Moscow State University, GSP-1, Leninskie Gory, Moscow 119991, Russian Federation  
-<sup>d</sup> N.D. Zelinsky Institute of Organic Chemistry, Russian Academy of Sciences, 47 Leninsky Pr., Moscow 119991, Russian Federation  
-
-*Corresponding Author: Ashot V. Arzumanyan
-
-<img width="294" height="274" alt="image" src="https://github.com/user-attachments/assets/618d4ad2-0533-43f0-b69a-6ed9e1a4da50" />  
-
-
 ---
 
 **HS-solution** accompanies the hydrosilylation (**HS**) study. The repository groups three layers: (1) **tabular data** under [`All_data/`](All_data/), (2) **research code** under [`processing_and_ML_code/`](processing_and_ML_code/) (descriptor generation, genetic feature selection, model benchmarks, SHAP-style diagnostics), and (3) a lightweight **Streamlit** demo under [`streamlit/`](streamlit/) for loading new reaction SMILES and running the trained models. The article remains the authoritative description of chemistry, experiments, and statistics; this file is a **navigation map** for code and data.
@@ -81,4 +69,19 @@ The app allows users to upload CSV or Excel files containing a `SMILES` column, 
 ## Upstream repository
 
 **[github.com/cochievgeor-maker/HS-solution](https://github.com/cochievgeor-maker/HS-solution)**
+
+# Authors
+
+Anton P. Drozdov^[a]^, Irina K. Goncharova^[a,b]^, Maria S. Sokolova^[a]^, Georgy D. Kochiev^[d]^, Bogdan O. Protsenko^[d]^, Maxim A. Novikov^[e]^, Irina P. Beletskaya^[b,c]^, Ashot V. Arzumanyan^[a,b]^*
+
+[a] A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences, 28 Vavilov St., Moscow 119991, Russian Federation  
+[b] A.V. Topchiev Institute of Petrochemical Synthesis, Russian Academy of Sciences, 29 Leninsky Prospect, Moscow 119991, Russian Federation  
+[c] M.V. Lomonosov Moscow State University, GSP-1, Leninskie Gory, Moscow 119991, Russian Federation  
+[d] The Smart Materials Research Institute, Southern Federal University, Rostov-on-Don, 344090, Russian Federation  
+[e] N.D. Zelinsky Institute of Organic Chemistry, Russian Academy of Sciences, 47 Leninsky Pr., Moscow 119991, Russian Federation  
+
+*Corresponding author: Ashot V. Arzumanyan
+
+<img width="294" height="274" alt="image" src="https://github.com/user-attachments/assets/618d4ad2-0533-43f0-b69a-6ed9e1a4da50" />  
+
 
