@@ -61,7 +61,6 @@ The app allows users to upload CSV or Excel files containing a `SMILES` column, 
 1. `pip install -r streamlit/requirements.txt`
 2. Place `model_a2.pkl`, `model_b2.pkl`, `features_a2.pkl`, `features_b2.pkl` next to `streamlit/code.py`, **or** edit the loader paths (defaults may point to Streamlit Cloud: `/mount/src/hs-solution/streamlit/…`).
 3. `cd streamlit && streamlit run code.py`
-4. 
 ---
 
 ## Upstream repository
