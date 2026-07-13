@@ -1,8 +1,6 @@
 # HS-solution
 
-## Software companion to the publication: 
-
-## "Peroxides Instead of Metals as Hydrosilylation Catalysts"
+## Software companion to the publication "Broad-scope Peroxide-initiated Hydrosilylation under Equimolar and Solvent-free Conditions"
 
 ---
 
