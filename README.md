@@ -77,4 +77,5 @@ Anton P. Drozdov (a), Irina K. Goncharova (a,b), Maria S. Sokolova (a), Georgy D
 (d) The Smart Materials Research Institute, Southern Federal University, Rostov-on-Don, 344090, Russian Federation  
 (e) N.D. Zelinsky Institute of Organic Chemistry, Russian Academy of Sciences, 47 Leninsky Pr., Moscow 119991, Russian Federation  
 
-<img width="350" height="300" alt="schema" src="images/sfedu.png" /><img width="294" height="274" alt="schema" src="images/sfedu2.png" />
+<img width="350" height="300" alt="schema" src="images/sfedu.png" />
+<img width="294" height="274" alt="schema" src="images/sfedu2.png" />
