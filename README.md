@@ -70,15 +70,13 @@ The app allows users to upload CSV or Excel files containing a `SMILES` column, 
 
 # Authors
 
-Anton P. Drozdov^[a]^, Irina K. Goncharova^[a,b]^, Maria S. Sokolova^[a]^, Georgy D. Kochiev^[d]^, Bogdan O. Protsenko^[d]^, Maxim A. Novikov^[e]^, Irina P. Beletskaya^[b,c]^, Ashot V. Arzumanyan^[a,b]^*
+Anton P. Drozdov (a), Irina K. Goncharova (a,b), Maria S. Sokolova (a), Georgy D. Kochiev (d), Bogdan O. Protsenko (d), Maxim A. Novikov (e), Irina P. Beletskaya (b,c), Ashot V. Arzumanyan (a,b)*
 
-[a] A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences, 28 Vavilov St., Moscow 119991, Russian Federation  
-[b] A.V. Topchiev Institute of Petrochemical Synthesis, Russian Academy of Sciences, 29 Leninsky Prospect, Moscow 119991, Russian Federation  
-[c] M.V. Lomonosov Moscow State University, GSP-1, Leninskie Gory, Moscow 119991, Russian Federation  
-[d] The Smart Materials Research Institute, Southern Federal University, Rostov-on-Don, 344090, Russian Federation  
-[e] N.D. Zelinsky Institute of Organic Chemistry, Russian Academy of Sciences, 47 Leninsky Pr., Moscow 119991, Russian Federation  
-
-*Corresponding author: Ashot V. Arzumanyan
+(a) A.N. Nesmeyanov Institute of Organoelement Compounds, Russian Academy of Sciences, 28 Vavilov St., Moscow 119991, Russian Federation  
+(b) A.V. Topchiev Institute of Petrochemical Synthesis, Russian Academy of Sciences, 29 Leninsky Prospect, Moscow 119991, Russian Federation  
+(c) M.V. Lomonosov Moscow State University, GSP-1, Leninskie Gory, Moscow 119991, Russian Federation  
+(d) The Smart Materials Research Institute, Southern Federal University, Rostov-on-Don, 344090, Russian Federation  
+(e) N.D. Zelinsky Institute of Organic Chemistry, Russian Academy of Sciences, 47 Leninsky Pr., Moscow 119991, Russian Federation  
 
 <img width="294" height="274" alt="image" src="https://github.com/user-attachments/assets/618d4ad2-0533-43f0-b69a-6ed9e1a4da50" />  
 
